@@ -73,3 +73,111 @@ nav {
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
+
+@media screen and (max-width: 1080px) {
+  .site-icon {
+    font-size: 80px !important;
+  }
+  .site-title {
+    font-size: 1.5rem !important;
+  }
+  .nav ul {
+    font-size: 1rem !important;
+  }
+  .categories-container h3 {
+    font-size: 18px !important;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .category-btn:first-of-type {
+    margin-left: 10px !important;
+  }
+  .category-btn {
+    margin: 10px 5px 7px !important;
+  }
+  .search-container input {
+    width: 250px !important;
+  }
+  .container {
+    height: calc(100vh - 70px) !important;
+    padding: 0px !important;
+  }
+  .feed-container {
+    flex-direction: column;
+  }
+  .searchfeed-container {
+    align-items: center;
+  }
+  .results {
+    padding: 10px 0px !important;
+  }
+  .searched-container {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 5px !important;
+  }
+  .searched-container img {
+    width: 100%;
+  }
+  .sidebar-container {
+    height: auto !important;
+    overflow-x: scroll;
+    overflow-y: none !important;
+    margin-bottom: 5px;
+  }
+  .categories-container {
+    display: flex;
+    flex-direction: row !important;
+    width: auto !important;
+    margin-bottom: 5px;
+  }
+  .categories-container h3 {
+    display: none;
+  }
+  .categories-container a {
+    white-space: nowrap;
+  }
+  #br {
+    display: none;
+  }
+  .gifs-section {
+    margin-top: 10px;
+    padding: 0px !important;
+    margin-left: 0px !important;
+  }
+  .category {
+    padding-bottom: 0px !important;
+    margin-left: 15px;
+  }
+  .gifs-container {
+    margin-top: 10px !important;
+    padding: 0px 8px 10px;
+  }
+  .gifs-container img {
+    max-width: 100%;
+  }
+  .upload-container {
+    width: 100% !important;
+  }
+  .gif-detail-container {
+    padding: 0px 8px 8px 8px;
+  }
+  .form-container {
+    width: 100% !important;
+  }
+  .form-container form {
+    padding: 20px !important;
+  }
+  .form-input {
+    width: 100% !important;
+  }
+  .uploading {
+    margin-bottom: 40px;
+  }
+  footer {
+    /* display: none !important; */
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+  }
+}

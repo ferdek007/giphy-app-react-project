@@ -2,6 +2,8 @@ import { useState } from "react";
 import { uploadGif } from "../api/api";
 import GifDetails from "./GifDetails";
 
+import "./Upload.css";
+
 const Upload = () => {
   const [imageUrl, setImageUrl] = useState("");
   const [tags, setTags] = useState("");

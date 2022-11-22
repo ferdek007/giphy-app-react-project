@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 const GifCard = ({ gif, gif: { id, url } }) => {
-  //   console.log(gif);
   return (
     <div>
       <Link to={`/gifs/${id}`}>

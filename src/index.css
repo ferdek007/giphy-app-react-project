@@ -99,7 +99,7 @@ nav {
   .search-container input {
     width: 250px !important;
   }
-  .container {
+  .main-container {
     height: calc(100vh - 70px) !important;
     padding: 0px !important;
   }
@@ -240,7 +240,7 @@ nav {
   .site-title {
     font-size: 1.4rem !important;
   }
-  .container {
+  .main-container {
     height: calc(100vh - 140px) !important;
     padding: 0px !important;
   }
@@ -271,7 +271,7 @@ nav {
   .site-title {
     font-size: 1.6rem !important;
   }
-  .container {
+  .main-container {
     height: calc(100vh - 190px) !important;
     padding: 0px !important;
   }
@@ -284,4 +284,10 @@ nav {
   /* footer {
     display: block !important;
   } */
+}
+
+@media screen and (max-height: 740px) {
+  .message-box {
+    margin-bottom: 40px !important;
+  }
 }

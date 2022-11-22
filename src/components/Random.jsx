@@ -3,6 +3,8 @@ import { fetchRandom } from "../api/api";
 import GifDetails from "./GifDetails";
 import Loading from "./Loading";
 
+import "./Random.css";
+
 const Random = () => {
   const [randomGif, setRandomGif] = useState();
   const [randomTag, setRandomTag] = useState("");

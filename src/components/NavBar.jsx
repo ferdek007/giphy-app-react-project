@@ -7,6 +7,8 @@ import { HiTrendingUp } from "react-icons/hi";
 import { GiPerspectiveDiceSixFacesRandom } from "react-icons/gi";
 import { ImCloudUpload } from "react-icons/im";
 
+import "./NavBar.css";
+
 const NavBar = () => {
   const [searchTerm, setSearchTerm] = useState("");
 

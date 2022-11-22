@@ -1,0 +1,97 @@
+.nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.nav-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+}
+
+.site-title {
+  font-size: 2rem;
+}
+
+.site-icon {
+  font-size: 55px;
+}
+
+.search-container {
+  display: flex;
+  padding: 0.25rem;
+  align-items: center;
+}
+
+.search-container form {
+  background-color: #fff;
+  display: flex;
+  border-radius: 5px;
+}
+
+.search-container input {
+  border: none;
+  padding-left: 15px;
+  font-size: 17px;
+  height: 50px;
+  border-radius: 5px;
+  width: 450px;
+}
+
+.search-container input:focus {
+  outline: none;
+}
+
+#search-button {
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  background-color: aquamarine;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background-color: rgb(41, 225, 164);
+}
+
+.search-icon {
+  height: 70%;
+  width: 70%;
+}
+
+.nav-icon {
+  font-size: 35px;
+}
+
+.nav ul {
+  font-size: 1.2rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  color: inherit;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+}
+
+.nav li.active {
+  background-color: #555;
+}
+
+.nav li:hover {
+  background-color: #777;
+}

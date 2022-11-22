@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import { fetchDetails } from "../api/api";
 import Loading from "./Loading";
 
+import "./GifDetails.css";
+
 const GifDetails = () => {
   const [gifDetail, setGifDetail] = useState();
 

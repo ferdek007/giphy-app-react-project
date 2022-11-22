@@ -44,3 +44,14 @@ export const fetchDetails = async(id) => {
 
   return data;
 };
+
+export const fetchRandom = async(tag) => {
+  const {data} = await axios.get(`${BASE_URL}/random`, {
+    params: {
+      api_key: process.env.REACT_APP_GIPHY_API_KEY,
+      tag: tag
+    }
+  });
+
+  return data;
+};

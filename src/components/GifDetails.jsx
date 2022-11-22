@@ -5,14 +5,16 @@ import Loading from "./Loading";
 
 import "./GifDetails.css";
 
-const GifDetails = () => {
+const GifDetails = ({ uploadId }) => {
   const [gifDetail, setGifDetail] = useState();
 
   const { id } = useParams();
 
   useEffect(() => {
     if (id) fetchDetails(`${id}`).then((data) => setGifDetail(data.data));
-  }, [id]);
+    if (uploadId)
+      fetchDetails(`${uploadId}`).then((data) => setGifDetail(data.data));
+  }, [id, uploadId]);
 
   if (!gifDetail && id) return <Loading />;
   else if (!gifDetail && !id) return "";

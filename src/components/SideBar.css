@@ -1,0 +1,39 @@
+.categories-container {
+  margin-right: 6px;
+  width: 200px;
+}
+
+.category-btn {
+  font-weight: bold !important;
+  font-size: 13px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+
+  padding: 10px 20px;
+  margin: 10px 0px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+  background-color: #fc1503 !important;
+  color: white !important;
+}
+
+.category-btn:hover span {
+  color: white !important;
+}
+
+.categories-container h3 {
+  font-size: 20px;
+  text-align: center;
+  background-color: blue;
+  border-radius: 5px;
+  padding: 7px;
+}

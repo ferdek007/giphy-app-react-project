@@ -2,6 +2,8 @@
 import { BiAlignJustify } from "react-icons/bi";
 import { Link } from "react-router-dom";
 
+import "./SideBar.css";
+
 const SideBar = ({ categories, selectedCategory, setSelectedCategory }) => {
   return (
     <div className="categories-container">

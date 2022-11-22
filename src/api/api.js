@@ -33,3 +33,14 @@ export const fetchSearched = async(query) => {
   
   return data;
 };
+
+export const fetchDetails = async(id) => {
+  const {data} = await axios.get(`${BASE_URL}/${id}`, {
+    params: {
+      api_key: process.env.REACT_APP_GIPHY_API_KEY,
+      gif_id: id
+    }
+  });
+
+  return data;
+};

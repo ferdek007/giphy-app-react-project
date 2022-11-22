@@ -44,3 +44,32 @@ nav {
   background-color: #000;
   color: #fff;
 }
+
+.spinner {
+  color: #fff;
+  text-align: center;
+}
+
+.gif {
+  padding: 0 2px;
+}
+
+::placeholder {
+  font-size: 17px;
+  margin-bottom: 0;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(114, 113, 113);
+  border-radius: 10px;
+  height: 200px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}

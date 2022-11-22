@@ -1,10 +1,12 @@
 // icon
 import { BiAlignJustify } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import Loading from "./Loading";
 
 import "./SideBar.css";
 
 const SideBar = ({ categories, selectedCategory, setSelectedCategory }) => {
+  if (!categories.length) return <Loading />;
   return (
     <div className="categories-container">
       <h3>

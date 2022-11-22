@@ -1,8 +1,9 @@
 import GifCard from "./GifCard";
+import Loading from "./Loading";
 
 const GifsGrid = ({ gifs }) => {
   // gifs = {};
-  // console.log(gifs);
+  if (!gifs.length) return <Loading />;
   return gifs.map((item) => {
     return (
       <div key={item.id} className="gif">

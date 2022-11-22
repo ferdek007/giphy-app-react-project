@@ -1,0 +1,22 @@
+.searchfeed-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.results {
+  padding-bottom: 15px;
+}
+
+.searched-container {
+  margin: 0;
+  padding: 0 100px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

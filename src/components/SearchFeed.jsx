@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import { fetchSearched } from "../api/api";
 import GifsGrid from "./GifsGrid";
 
+import "./SearchFeed.css";
+
 const SearchFeed = () => {
   const [gifs, setGifs] = useState([]);
   const { searchTerm } = useParams();

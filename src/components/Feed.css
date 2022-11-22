@@ -1,0 +1,47 @@
+.feed-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.side-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.sidebar-container {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.gifs-section {
+  margin-left: 15px;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.category {
+  text-transform: capitalize;
+  padding-bottom: 15px;
+}
+
+.gifs-container {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 12px;
+}

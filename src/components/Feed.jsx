@@ -4,6 +4,8 @@ import { fetchCategories, fetchTrending, fetchSearched } from "../api/api";
 import SideBar from "./SideBar";
 import GifsGrid from "./GifsGrid";
 
+import "./Feed.css";
+
 const Feed = () => {
   let { category } = useParams();
   // console.log(category, "link");

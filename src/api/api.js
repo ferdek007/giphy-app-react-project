@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 const BASE_URL = 'https://api.giphy.com/v1/gifs';
+const UPLOAD_URL = 'https://upload.giphy.com/v1/gifs';
 
 const DEFAULT_PARAMS = {
     api_key: process.env.REACT_APP_GIPHY_API_KEY,
@@ -54,4 +55,23 @@ export const fetchRandom = async(tag) => {
   });
 
   return data;
+};
+
+export const uploadGif = async(source_image_url, tags, source_post_url) => {
+  try {
+    const res = await axios.post(UPLOAD_URL, {
+        api_key: process.env.REACT_APP_GIPHY_API_KEY,
+        source_image_url,
+        tags,
+        source_post_url
+    },
+    {
+        headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' }
+    });
+
+    return res.data;
+  } catch (error) {
+      console.log(error.message);
+      return(error);
+  }
 };

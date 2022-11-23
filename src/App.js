@@ -12,7 +12,7 @@ function App() {
       <NavBar />
       <div className="main-container">
         <Routes>
-          <Route path="/giphy-app-react-project" exact element={<Feed />} />
+          <Route path="/" exact element={<Feed />} />
           <Route path="/categories/:category" exact element={<Feed />} />
           <Route path="/random" element={<Random />} />
           <Route path="/upload" element={<Upload />} />

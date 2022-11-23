@@ -13,11 +13,11 @@ function App() {
       <div className="main-container">
         <Routes>
           <Route path="/giphy-app-react-project" exact element={<Feed />} />
-          <Route path="/giphy-app-react-project/categories/:category" exact element={<Feed />} />
-          <Route path="/giphy-app-react-project/random" element={<Random />} />
-          <Route path="/giphy-app-react-project/upload" element={<Upload />} />
-          <Route path="/giphy-app-react-project/gifs/:id" element={<GifDetails />} />
-          <Route path="/giphy-app-react-project/search/:searchTerm" element={<SearchFeed />} />
+          <Route path="/categories/:category" exact element={<Feed />} />
+          <Route path="/random" element={<Random />} />
+          <Route path="/upload" element={<Upload />} />
+          <Route path="/gifs/:id" element={<GifDetails />} />
+          <Route path="/search/:searchTerm" element={<SearchFeed />} />
         </Routes>
       </div>
     </>
